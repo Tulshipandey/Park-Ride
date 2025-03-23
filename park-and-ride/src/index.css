@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@import 'leaflet/dist/leaflet.css';
+
+body {
+    @apply bg-gray-100 text-gray-800;
+  }
+  
+  .bg-primary {
+    background-color: #56DCC5;
+  }
+  
+  .text-primary {
+    color: #56DCC5;
+  }
+  
+  .border-primary {
+    border-color: #56DCC5;
+  }
+  
