@@ -13,8 +13,7 @@ const Hero = () => {
   // Get active and upcoming bookings for logged-in users
   const activeBookings = bookings?.filter(booking => booking.status === 'active') || [];
   const upcomingBookings = bookings?.filter(booking => 
-    (booking.status === 'pending' || booking.status === 'confirmed') && 
-    booking.status !== 'canceled'
+    booking.status === 'pending' || booking.status === 'confirmed'
   ) || [];
 
   return (

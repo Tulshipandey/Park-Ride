@@ -2,7 +2,6 @@
 
 import { FaStar } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import Link from 'next/link';
 
 const Testimonials = () => {
@@ -19,7 +18,7 @@ const Testimonials = () => {
       role: 'Business Traveler',
       image: '/images/testimonial-2.jpg',
       stars: 5,
-      text: 'As someone who travels frequently for business, this service has been invaluable. I can plan ahead, know exactly where I\'m parking, and the shuttle service is always on time.'
+      text: 'As someone who travels frequently for business, this service has been invaluable. I can plan ahead, know exactly where I&apos;m parking, and the shuttle service is always on time.'
     },
     {
       name: 'Emily Rodriguez',
@@ -42,7 +41,7 @@ const Testimonials = () => {
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What Our Users Say</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Don't just take our word for it. Here's what people who use Park & Ride have to say.
+            Don&apos;t just take our word for it. Here&apos;s what people who use Park & Ride have to say.
           </p>
         </motion.div>
 
@@ -80,10 +79,10 @@ const Testimonials = () => {
                 ))}
               </div>
               
-              <p className="text-gray-700 italic">"{testimonial.text}"</p>
+              <p className="text-gray-700 italic">&quot;{testimonial.text}&quot;</p>
               
               <div className="absolute -top-2 -right-2 bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center text-lg font-bold">
-                "
+                &quot;
               </div>
             </motion.div>
           ))}

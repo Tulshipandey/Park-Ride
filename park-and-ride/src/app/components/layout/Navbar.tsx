@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { FaParking, FaBars, FaTimes, FaUserCircle } from 'react-icons/fa';
+import { FaParking, FaBars, FaTimes } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAuth } from '../../lib/AuthContext';
 

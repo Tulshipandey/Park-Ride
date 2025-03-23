@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useAuth } from '../lib/AuthContext';
-import { FaCalendarAlt, FaTicketAlt, FaHistory, FaMapMarkedAlt, FaCar, FaCreditCard, FaSignOutAlt, FaQrcode } from 'react-icons/fa';
+import { FaCalendarAlt, FaTicketAlt, FaMapMarkedAlt, FaCar, FaSignOutAlt, FaQrcode } from 'react-icons/fa';
 import ProfileManager from './components/ProfileManager';
 import SupportCenter from './components/SupportCenter';
 import BookingQR from './components/BookingQR';

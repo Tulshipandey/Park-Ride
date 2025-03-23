@@ -106,7 +106,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
       const currentMockUsers = storedUsers ? JSON.parse(storedUsers) : defaultMockUsers;
       
       // Find user in our mock database
-      const foundUser = currentMockUsers.find(u => u.email === email && u.password === password);
+      const foundUser = currentMockUsers.find((u: MockUserWithCredentials) => u.email === email && u.password === password);
       
       if (!foundUser) {
         throw new Error('auth/invalid-credential');
@@ -146,7 +146,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
       const currentMockUsers = storedUsers ? JSON.parse(storedUsers) : defaultMockUsers;
       
       // Check if user already exists
-      if (currentMockUsers.some(u => u.email === email)) {
+      if (currentMockUsers.some((u: MockUserWithCredentials) => u.email === email)) {
         throw new Error('auth/email-already-in-use');
       }
       
@@ -215,7 +215,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
       const currentMockUsers = storedUsers ? JSON.parse(storedUsers) : defaultMockUsers;
       
       // Check if user exists
-      const foundUser = currentMockUsers.find(u => u.email === email);
+      const foundUser = currentMockUsers.find((u: MockUserWithCredentials) => u.email === email);
       
       if (!foundUser) {
         throw new Error('auth/user-not-found');

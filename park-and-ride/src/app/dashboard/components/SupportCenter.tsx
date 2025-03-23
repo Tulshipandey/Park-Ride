@@ -20,7 +20,7 @@ const faqs: FAQ[] = [
   {
     id: 'f2',
     question: 'What happens if I arrive late for my parking slot?',
-    answer: 'Your parking slot is reserved for the entire duration of your booking. If you arrive later than your booking start time, you can still use your reserved spot, but you won\'t receive any refund or extension for the unused time.',
+    answer: 'Your parking slot is reserved for the entire duration of your booking. If you arrive later than your booking start time, you can still use your reserved spot, but you won&apos;t receive any refund or extension for the unused time.',
     category: 'bookings',
   },
   {
@@ -212,7 +212,7 @@ export default function SupportCenter() {
           {!showContactForm ? (
             <div className="bg-blue-50 p-4 rounded-lg">
               <p className="text-sm text-gray-700 mb-4 text-black">
-                Can't find what you're looking for? Our support team is here to help you with any questions or issues.
+                Can&apos;t find what you&apos;re looking for? Our support team is here to help you with any questions or issues.
               </p>
               <button
                 onClick={() => setShowContactForm(true)}

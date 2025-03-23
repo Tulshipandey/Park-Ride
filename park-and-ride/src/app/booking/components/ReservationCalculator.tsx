@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { FaCalculator, FaParking, FaShuttleVan, FaCreditCard, FaInfoCircle, FaCheck } from 'react-icons/fa';
+import { FaCalculator, FaCreditCard, FaInfoCircle, FaCheck } from 'react-icons/fa';
 
 type LocationOption = {
   id: string;
@@ -235,7 +235,7 @@ export default function ReservationCalculator({
       }
       
       // Calculate base price = (base rate * vehicle multiplier * hours)
-      let basePrice = location.baseRate * vehicleType.rateMultiplier * hours;
+      const basePrice = location.baseRate * vehicleType.rateMultiplier * hours;
       
       // Apply premium time multiplier if applicable
       const premiumPrice = isPremiumTime ? (basePrice * location.premiumMultiplier) - basePrice : 0;

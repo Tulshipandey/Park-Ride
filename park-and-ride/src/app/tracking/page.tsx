@@ -51,7 +51,7 @@ const generateTimes = () => {
   
   // Round to the nearest 30 minutes
   const startMinute = currentMinute < 30 ? 30 : 0;
-  let startHour = currentMinute < 30 ? currentHour : currentHour + 1;
+  const startHour = currentMinute < 30 ? currentHour : currentHour + 1;
   
   // Generate 48 time slots (24 hours)
   for (let i = 0; i < 48; i++) {
@@ -215,7 +215,7 @@ const ShuttleBookingForm = ({ shuttle, onClose, onBook }: ShuttleBookingFormProp
             <FaInfoCircle className="text-blue-500 mt-1 mr-2 flex-shrink-0" />
             <div>
               <p className="text-sm text-blue-800">
-                You're booking a shuttle from <strong>{shuttle.location}</strong> to <strong>{shuttle.heading}</strong>.
+                You&apos;re booking a shuttle from <strong>{shuttle.location}</strong> to <strong>{shuttle.heading}</strong>.
                 Current capacity is <strong>{shuttle.capacity}</strong>.
               </p>
             </div>
